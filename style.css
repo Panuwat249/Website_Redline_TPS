@@ -1,28 +1,23 @@
 body {
     font-family: 'Prompt', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-.hero {
-    background: linear-gradient(135deg, #b30000, #ff3333);
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-link {
+.navbar .nav-link {
     font-size: 18px;
     font-weight: 600;
 }
 
+.carousel-caption h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
 .btn-light {
     color: #b30000;
-    font-size: 20px;
     font-weight: 600;
-    transition: all 0.3s ease;
+    border-radius: 30px;
+    padding: 12px 30px;
+    transition: 0.3s;
 }
 
 .btn-light:hover {
