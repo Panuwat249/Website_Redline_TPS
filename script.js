@@ -1,4 +1,20 @@
 // Basic DOM helpers
+});
+
+
+// Set year in footers
+document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
+['year2','year3','year4'].forEach(id=>{ if(document.getElementById(id)) document.getElementById(id).textContent = new Date().getFullYear(); });
+
+
+// Simple slider
+(function(){
+const slider = document.getElementById('heroSlider');
+if(!slider) return;
+const slidesWrap = slider.querySelector('.slides');
+const slides = slider.querySelectorAll('.slide');
+let idx = 0;
+function show(i){
 slidesWrap.style.transform = `translateX(-${i*100}%)`;
 }
 slider.querySelector('.prev').addEventListener('click', ()=>{ idx = (idx-1 + slides.length)%slides.length; show(idx); });
