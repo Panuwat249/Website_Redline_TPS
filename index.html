@@ -1,72 +1,71 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>รถไฟฟ้าสายสีแดง - Red Line Metro</title>
+<!doctype html>
+</div>
+</div>
+</section>
 
 
-<!-- Google Font: PROMPT -->
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- News slider (JS-powered) -->
+<section class="news-slider container">
+<h2>ไฮไลท์ข่าว</h2>
+<div class="slider" id="heroSlider">
+<button class="slider-btn prev" aria-label="ก่อนหน้า">‹</button>
+<div class="slides">
+<article class="slide">
+<img src="assets/news1.jpg" alt="ข่าว1">
+<div class="slide-text">
+<h3>ทดลองเดินรถเสมือนจริง</h3>
+<p>การทดลองเดินรถเพื่อประเมินประสิทธิภาพก่อนเปิดให้บริการปกติ</p>
+<a href="news.html" class="link">อ่านต่อ</a>
+</div>
+</article>
+<article class="slide">
+<img src="assets/news2.jpg" alt="ข่าว2">
+<div class="slide-text">
+<h3>ปิดปรับปรุงสถานี X</h3>
+<p>แจ้งปิดปรับปรุงสถานีเป็นการชั่วคราวเพื่อความปลอดภัย</p>
+<a href="news.html" class="link">อ่านต่อ</a>
+</div>
+</article>
+</div>
+<button class="slider-btn next" aria-label="ถัดไป">›</button>
+</div>
+</section>
 
 
-<!-- Main CSS -->
-<link rel="stylesheet" href="css/style.css" />
-</head>
-
-
-<body>
-<!-- HEADER -->
-<header>
-<div class="header-container">
-<div class="logo">RED LINE METRO</div>
-<nav>
+<!-- Accessibility quickinfo -->
+<section class="container accessibility">
+<h2>ข้อมูลด่วน</h2>
 <ul>
-<li><a href="index.html">หน้าแรก</a></li>
-<li><a href="about.html">เกี่ยวกับโครงการ</a></li>
-<li><a href="service.html">บริการ</a></li>
-<li><a href="news.html">ข่าวสาร</a></li>
-<li><a href="contact.html">ติดต่อ</a></li>
+<li>เวลาให้บริการ: 05:30 – 24:00</li>
+<li>ความถี่: 10–15 นาที (ชั่วโมงเร่งด่วนถี่ขึ้น)</li>
+<li>มีสิ่งอำนวยความสะดวกสำหรับผู้พิการ</li>
 </ul>
-</nav>
-</div>
-</header>
-
-
-<!-- HERO BANNER -->
-<section class="hero">
-<div class="hero-text">
-<h1>รถไฟฟ้าสายสีแดง</h1>
-<p>ระบบขนส่งมวลชนทางรางเชื่อมต่อโครงข่ายหลักของกรุงเทพมหานคร</p>
-<a href="service.html" class="btn-main">ดูเส้นทางเดินรถ</a>
-</div>
 </section>
 
 
-<!-- QUICK INFO SECTION -->
-<section class="section">
-<h2>บริการหลัก</h2>
-<div class="card-grid">
-<div class="card">
-<h3>เส้นทางเดินรถ</h3>
-<p>ให้บริการสถานีสำคัญ เช่น บางซื่อ ดอนเมือง รังสิต</p>
+<!-- Footer -->
+<footer class="site-footer" id="contact">
+<div class="container footer-grid">
+<div>
+<img src="assets/logo.png" alt="logo" class="footer-logo">
+<p>© <span id="year"></span> รถไฟฟ้าสายสีแดง</p>
 </div>
-<div class="card">
-<h3>เวลาเดินรถ</h3>
-<p>ให้บริการตั้งแต่ 05:30 - 24:00 ทุกวัน</p>
+<div>
+<h4>ติดต่อ</h4>
+<p>info@redlinemetro.th<br>02-XXX-XXXX</p>
 </div>
-<div class="card">
-<h3>อัตราค่าโดยสาร</h3>
-<p>คิดตามระยะทาง เริ่มต้นที่ 12 บาท</p>
+<div>
+<h4>ลิงก์ด่วน</h4>
+<ul>
+<li><a href="service.html">บริการ</a></li>
+<li><a href="about.html">โครงการ</a></li>
+<li><a href="news.html">ข่าวสาร</a></li>
+</ul>
 </div>
 </div>
-</section>
-
-
-<!-- FOOTER -->
-<footer>
-<p>โครงการรถไฟฟ้าชานเมืองสายสีแดง (Red Line Metro)</p>
-<p>© 2025 All Rights Reserved</p>
 </footer>
+
+
+<script src="script.js"></script>
 </body>
 </html>
