@@ -1,42 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ข่าวสาร — สายสีแดง</title>
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ข่าวสาร - Red Line Metro</title>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<header class="site-header">
-<div class="container header-inner">
-<a href="index.html" class="brand"><img src="assets/logo.png" alt="Red Line Logo"></a>
-<nav class="main-nav">
-<ul class="nav-list">
+<header>
+<div class="header-container">
+<div class="logo">RED LINE METRO</div>
+<nav>
+<ul>
 <li><a href="index.html">หน้าแรก</a></li>
-<li><a href="about.html">เกี่ยวกับ</a></li>
+<li><a href="about.html">เกี่ยวกับโครงการ</a></li>
 <li><a href="service.html">บริการ</a></li>
-<li><a href="news.html" aria-current="page">ข่าวสาร</a></li>
+<li><a href="news.html">ข่าวสาร</a></li>
+<li><a href="contact.html">ติดต่อ</a></li>
 </ul>
 </nav>
 </div>
 </header>
-
-
-<main class="container section">
-<h1>ข่าวสารและประกาศ</h1>
-<div id="newsList" class="news-grid"></div>
-<div class="pagination" id="pagination"></div>
-</main>
-
-
-<footer class="site-footer">
-<div class="container footer-grid">
-<p>© <span id="year4"></span> รถไฟฟ้าสายสีแดง</p>
+<section class="section">
+<h2>ข่าวล่าสุด</h2>
+<div class="card-grid" id="news-container">
+<!-- NEWS LOADED BY JS -->
 </div>
+</section>
+<script src="js/script.js"></script>
+<footer>
+<p>โครงการรถไฟฟ้าชานเมืองสายสีแดง (Red Line Metro)</p>
+<p>© 2025 All Rights Reserved</p>
 </footer>
-
-
-<script src="script.js"></script>
 </body>
 </html>
