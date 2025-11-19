@@ -1,26 +1,76 @@
 body {
-    font-family: 'Prompt', sans-serif;
+margin: 0;
+font-family: 'Prompt', sans-serif;
+background: #f8f8f8;
 }
-
-.navbar .nav-link {
-    font-size: 18px;
-    font-weight: 600;
+.topbar {
+background: #b40000;
+color: white;
+padding: 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 0;
 }
-
-.carousel-caption h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
+.logo { font-weight: 800; }
+.logo span { font-weight: 400; font-size: 14px; }
+.nav a {
+color: white;
+margin-left: 20px;
+text-decoration: none;
+font-weight: 600;
 }
-
-.btn-light {
-    color: #b30000;
-    font-weight: 600;
-    border-radius: 30px;
-    padding: 12px 30px;
-    transition: 0.3s;
+.hero {
+background: linear-gradient(#d20000, #990000);
+color: white;
+padding: 80px 20px;
+text-align: center;
 }
-
-.btn-light:hover {
-    background-color: #ffe5e5;
-    color: #900000;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+.btn {
+background: white;
+color: #b40000;
+padding: 10px 20px;
+border-radius: 5px;
+font-weight: 700;
+text-decoration: none;
+}
+.btn-outline {
+color: white;
+padding: 10px 20px;
+border: 2px solid white;
+border-radius: 5px;
+margin-left: 10px;
+text-decoration: none;
+}
+.content {
+padding: 40px 20px;
+max-width: 900px;
+margin: auto;
+}
+.box, .card {
+background: white;
+padding: 20px;
+border-radius: 10px;
+margin-top: 10px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+gap: 15px;
+}
+.form input, .form textarea {
+width: 100%;
+margin-top: 10px;
+padding: 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+.footer {
+background: #990000;
+color: white;
+padding: 20px;
+text-align: center;
+margin-top: 40px;
+}
