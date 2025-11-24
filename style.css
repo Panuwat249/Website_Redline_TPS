@@ -3,85 +3,75 @@
 ================================= */
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
 
-:root{
-const header = document.querySelector('.site-header');
-const expanded = this.getAttribute('aria-expanded') === 'true';
-this.setAttribute('aria-expanded', String(!expanded));
-header.classList.toggle('mobile-open');
-});
 
-
-// Set year in footers
-document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
-['year2','year3','year4'].forEach(id=>{ if(document.getElementById(id)) document.getElementById(id).textContent = new Date().getFullYear(); });
-
-
-// Simple slider
-(function(){
-const slider = document.getElementById('heroSlider');
-if(!slider) return;
-const slidesWrap = slider.querySelector('.slides');
-const slides = slider.querySelectorAll('.slide');
-let idx = 0;
-function show(i){
-slidesWrap.style.transform = `translateX(-${i*100}%)`;
-}
-slider.querySelector('.prev').addEventListener('click', ()=>{ idx = (idx-1 + slides.length)%slides.length; show(idx); });
-slider.querySelector('.next').addEventListener('click', ()=>{ idx = (idx+1)%slides.length; show(idx); });
-// auto play
-setInterval(()=>{ idx = (idx+1)%slides.length; show(idx); }, 6000);
-})();
-
-
-// Load news JSON and paginate
-(function(){
-const newsListEl = document.getElementById('newsList');
-const paginationEl = document.getElementById('pagination');
-if(!newsListEl || !paginationEl) return;
-
-
-fetch('news-data.json').then(r=>r.json()).then(data=>{
-const perPage = 6;
-const total = data.length;
-const pages = Math.ceil(total/perPage);
-let current = 1;
-
-
-function renderPage(page){
-newsListEl.innerHTML = '';
-const start = (page-1)*perPage;
-const slice = data.slice(start, start+perPage);
-slice.forEach(item=>{
-const div = document.createElement('div');
-div.className = 'news-item fade-up';
-div.innerHTML = `
-<img src="${item.image}" alt="${item.title}">
-<h3>${item.title}</h3>
-<p class="muted">${item.date}</p>
-<p>${item.excerpt}</p>
-<a href="#" class="btn">อ่านเพิ่มเติม</a>
-`;
-newsListEl.appendChild(div);
-});
-renderPagination(page);
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #fff5f5;
+    margin: 0;
+    padding: 0;
 }
 
-
-function renderPagination(active){
-paginationEl.innerHTML = '';
-for(let i=1;i<=pages;i++){
-const btn = document.createElement('button');
-btn.className = 'page-btn' + (i===active? ' active':'');
-btn.textContent = i;
-btn.addEventListener('click', ()=>{ renderPage(i); });
-paginationEl.appendChild(btn);
-}
+.navbar {
+    background-color: #b30000 !important;
 }
 
+.navbar .nav-link {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff !important;
+}
 
-renderPage(1);
-}).catch(err=>{
-newsListEl.innerHTML = '<p>ไม่สามารถโหลดข่าวได้ในขณะนี้</p>';
-console.error(err);
-});
-})();
+.navbar .nav-link:hover {
+    color: #ffe5e5 !important;
+}
+
+.hero {
+    background: linear-gradient(135deg, #b30000, #ff3333);
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.3rem;
+}
+
+.btn-custom {
+    background-color: #fff;
+    color: #b30000;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 14px 40px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #ffe5e5;
+    color: #900000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.table-danger {
+    background-color: #b30000 !important;
+    color: white;
+}
+
+footer {
+    background-color: #b30000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
