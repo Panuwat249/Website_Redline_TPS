@@ -1,28 +1,9 @@
-/* ================================
-   FONT: PROMPT (Google Font)
-================================= */
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
-
 
 body {
     font-family: 'Prompt', sans-serif;
     background-color: #fff5f5;
     margin: 0;
     padding: 0;
-}
-
-.navbar {
-    background-color: #b30000 !important;
-}
-
-.navbar .nav-link {
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff !important;
-}
-
-.navbar .nav-link:hover {
-    color: #ffe5e5 !important;
 }
 
 .hero {
@@ -45,33 +26,20 @@ body {
     font-size: 1.3rem;
 }
 
-.btn-custom {
-    background-color: #fff;
+.btn-light {
     color: #b30000;
-    font-size: 20px;
     font-weight: 600;
-    border-radius: 50px;
-    padding: 14px 40px;
-    text-decoration: none;
     transition: all 0.3s ease;
 }
 
-.btn-custom:hover {
+.btn-light:hover {
     background-color: #ffe5e5;
     color: #900000;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.table-danger {
-    background-color: #b30000 !important;
-    color: white;
-}
-
 footer {
     background-color: #b30000;
     color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+    font-size: 16px;
 }
-
