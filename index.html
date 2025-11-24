@@ -1,40 +1,71 @@
+<!doctype html>
+</div>
+</div>
+</section>
 
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>รถไฟฟ้าสายสีแดง</title>
-    <!-- Bootstrap CSS -->
-    https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Prompt0&display=swap
-    <!-- Custom CSS -->
-    style.css
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark shadow">
-    <div class="container">
-        <a class="navbar-brand fw-bold text-white" href="index.html">
-a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">index.htmlหน้าแรก</a></li>
-                <li class="nav-item">schedule.htmlตารางเดินรถ</a></li>
-                <li class="nav-item">news.htmlข่าวสาร</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อเรา</a     </div>
-    </div>
-</nav>
 
-<header class="hero">
-    <h1>รถไฟฟ้าสายสีแดง</h1>
-    <p>เชื่อมต่อเมืองอย่างสะดวก รวดเร็ว ปลอดภัย</p>
-    <a href="schedule.html" class="btn-custom mt-3">ดูตารางเดิน 2025 รถไฟฟ้าสายสีแดง | ติดต่อ: info@srtet.co.th</p>
+<!-- News slider (JS-powered) -->
+<section class="news-slider container">
+<h2>ไฮไลท์ข่าว</h2>
+<div class="slider" id="heroSlider">
+<button class="slider-btn prev" aria-label="ก่อนหน้า">‹</button>
+<div class="slides">
+<article class="slide">
+<img src="assets/news1.jpg" alt="ข่าว1">
+<div class="slide-text">
+<h3>ทดลองเดินรถเสมือนจริง</h3>
+<p>การทดลองเดินรถเพื่อประเมินประสิทธิภาพก่อนเปิดให้บริการปกติ</p>
+<a href="news.html" class="link">อ่านต่อ</a>
+</div>
+</article>
+<article class="slide">
+<img src="assets/news2.jpg" alt="ข่าว2">
+<div class="slide-text">
+<h3>ปิดปรับปรุงสถานี X</h3>
+<p>แจ้งปิดปรับปรุงสถานีเป็นการชั่วคราวเพื่อความปลอดภัย</p>
+<a href="news.html" class="link">อ่านต่อ</a>
+</div>
+</article>
+</div>
+<button class="slider-btn next" aria-label="ถัดไป">›</button>
+</div>
+</section>
+
+
+<!-- Accessibility quickinfo -->
+<section class="container accessibility">
+<h2>ข้อมูลด่วน</h2>
+<ul>
+<li>เวลาให้บริการ: 05:30 – 24:00</li>
+<li>ความถี่: 10–15 นาที (ชั่วโมงเร่งด่วนถี่ขึ้น)</li>
+<li>มีสิ่งอำนวยความสะดวกสำหรับผู้พิการ</li>
+</ul>
+</section>
+
+
+<!-- Footer -->
+<footer class="site-footer" id="contact">
+<div class="container footer-grid">
+<div>
+<img src="assets/logo.png" alt="logo" class="footer-logo">
+<p>© <span id="year"></span> รถไฟฟ้าสายสีแดง</p>
+</div>
+<div>
+<h4>ติดต่อ</h4>
+<p>info@redlinemetro.th<br>02-XXX-XXXX</p>
+</div>
+<div>
+<h4>ลิงก์ด่วน</h4>
+<ul>
+<li><a href="service.html">บริการ</a></li>
+<li><a href="about.html">โครงการ</a></li>
+<li><a href="news.html">ข่าวสาร</a></li>
+</ul>
+</div>
+</div>
 </footer>
 
-<script/cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js</script>
+
+<script src="script.js"></script>
 </body>
 </html>
