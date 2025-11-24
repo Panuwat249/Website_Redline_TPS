@@ -4,6 +4,35 @@ col
 	{mso-width-source:auto;}
 br
 	{mso-data-placement:same-cell;}
+.style103
+	{color:#0563C1;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-style-name:Hyperlink;
+	mso-style-id:8;}
+a:link
+	{color:#0563C1;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;}
+a:visited
+	{color:#954F72;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;}
 .style0
 	{mso-number-format:General;
 	text-align:general;
@@ -27,25 +56,11 @@ br
 	{mso-number-format:0%;
 	mso-style-name:Percent;
 	mso-style-id:5;}
-.font10
-	{color:black;
-	font-size:9.0pt;
-	font-weight:700;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Tahoma, sans-serif;
-	mso-font-charset:0;}
-.font11
-	{color:black;
-	font-size:9.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Tahoma, sans-serif;
-	mso-font-charset:0;}
 td
 	{mso-style-parent:style0;
-	padding:0px;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
 	mso-ignore:padding;
 	color:black;
 	font-size:11.0pt;
@@ -480,3 +495,10 @@ td
 	border-left:none;
 	background:yellow;
 	mso-pattern:black none;}
+.xl97
+	{mso-style-parent:style103;
+	color:#0563C1;
+	text-decoration:underline;
+	text-underline-style:single;
+	text-align:center;
+	vertical-align:middle;}
